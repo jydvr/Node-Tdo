@@ -1,0 +1,7 @@
+{
+    "tenant_id": 1,
+    "tenant_name": "GBB",
+    "secret_key":"2b5e1942ce9994a8b10cbdf829712263c787efd36cdbba6183aa3f9a422d39ec",
+    "applog":"logfiles/application_logger",
+    "metlog":"logfiles/metering_logger"
+}

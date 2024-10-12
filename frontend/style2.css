@@ -1,0 +1,18 @@
+.task h1{
+    display: flex;
+    justify-content: center;
+}
+.display{
+    display: flex;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+.display h2{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    border: solid black;
+    background-color: antiquewhite;
+}

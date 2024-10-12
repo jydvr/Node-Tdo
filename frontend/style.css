@@ -1,0 +1,293 @@
+.mainContainer {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #f2f4f4;
+}
+ 
+.firstportion {
+    width: 50%;
+}
+ 
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+ 
+.headertext {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+    margin-left: 15px;
+    padding: 5px;
+}
+ 
+.logincontainer {
+    padding: 10px;
+    width: 50%;
+}
+ 
+.changecolor {
+    color: grey;
+}
+ 
+.labelemail, .labelpassword, .rememberme {
+    font-size: small;
+    font-weight: bold;
+}
+ 
+.forgotflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:8px
+}
+ 
+.forgottext {
+    font-size:x-small;
+    font-weight: bold;
+    color: #7644c3;
+}
+ 
+.loginposition {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+ 
+ 
+.secondportion {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f4f4 ;
+}
+ 
+.box {
+    height: 210px;
+    width: 210px;
+    background-color: #6f42c1;  ;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 60%;
+    bottom: 60%;
+}
+ 
+.box-container {
+    position: relative;
+    width: 210px;
+    height: 210px;
+}
+ 
+.box-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: inherit; /* Inherit the color of .box */
+    filter: blur(8px); /* Adjust blur amount as needed */
+    border-radius: 0 0 50% 50%; /* Match the bottom half of the circle */
+    z-index: 1; /* Ensure it is above other content if needed */
+}
+ 
+.signin {
+    margin-top: 10px;
+    background-color: #7644c3;
+    width: 100%;
+    border: none;
+    padding: 4px;
+    border-radius: 5px;
+}
+ 
+.sigingoogle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    background-color: white;
+    width: 100%;
+    border: solid;
+    border-width: 1px;
+    padding: 4px;
+    border-radius: 5px;
+}
+ 
+.signintext {
+    color: white;
+    font-size: small;
+    font-weight: bold;
+}
+ 
+.googletext {
+    font-size: smaller;
+    font-weight:bold;
+}
+ 
+.signuptext {
+    font-size: x-small;
+    color: grey;
+}
+ 
+.up {
+    font-weight: bold;
+    color:#7644c3
+}
+ 
+ 
+#email, #password {
+    margin-top: 5px;
+    width: 100%;
+    padding: 3px;
+}
+ 
+.emaildiv, .passworddiv{
+    margin: 10px;
+    padding: 3px;
+}
+ 
+.checktext {
+    font-size: smaller;
+}
+ 
+.myflex {
+    display: flex;
+    gap: 2px;
+}
+ 
+ 
+.lasttext{
+    width: 100%;
+    margin: 6px;
+    display: flex;
+    justify-content: center;
+}
+ 
+ 
+.firstpartsecondpart, .secondpartsecondpart {
+    flex: 1;
+}
+ 
+ 
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: #6c48bf;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+ 
+.upper-panel {
+    height: 50%;
+    width: 100%;
+}
+ 
+.lower-panel {
+    position:absolute;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    backdrop-filter: blur(16px) saturate(180%); 
+    -webkit-backdrop-filter: blur(16px) saturate(180%); 
+    background-color: rgba(239, 239, 239, 0.139);
+    border: 1px #efefef;
+}
+ 
+.footerdiv {
+    margin-top: 15px;
+}
+ 
+.footer {
+    margin-top: 40px;
+    margin-left: 14px;
+    font-size: x-small;
+    font-weight:normal;
+    color: grey;
+}
+ 
+ 
+@media (max-width: 645px){
+    .secondportion{
+        display: none;
+    }
+    .firstportion {
+        width: 100%;
+    }
+}
+ 
+@media (max-width: 1000px){
+    .lasttext {
+        flex-direction: column;
+    }
+}
+ 
+ 
+@media (min-width: 600px) {
+    .mainContainer {
+        flex-direction: row;
+    }
+ 
+    .firstportion, .secondportion {
+        width: 50%;
+    }
+ 
+    .secondportion {
+        height: 100%;
+    }
+ 
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+}
+ 
+@media (min-width: 1024px) {
+    .mainContainer {
+        display: flex;
+        font-family: "Montserrat", sans-serif;
+        height: 100vh;
+        border-style: solid;
+        border-radius: 8px;
+        border-color: #f2f4f4;
+    }
+ 
+    .firstportion {
+        width: 50%;
+    }
+ 
+    .secondportion {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f2f4f4;
+    }
+ 
+    .circle {
+        width: 150px;
+        height: 150px;
+        background-color: #6c48bf;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+}
